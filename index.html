@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>PAPINK STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== Animation ===== */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ===== Background (Purple Pastel) ===== */
+body{
+  margin:0;
+  background:linear-gradient(
+    180deg,
+    #c6a6ff 0%,
+    #dcc8ff 55%,
+    #f6f1ff 100%
+  );
+  font-family:'Kanit',sans-serif;
+  text-align:center;
+  animation:fadeUp .7s ease;
+}
+
+/* glow light */
+body::before{
+  content:"";
+  position:fixed;
+  width:340px;
+  height:340px;
+  background:#e4d4ff;
+  filter:blur(140px);
+  top:-120px;
+  left:-120px;
+  z-index:-1;
+}
+
+/* ===== Font ===== */
+h1,h2,.navbar{
+  font-family:'Mali',cursive;
+}
+
+/* ===== Navbar ===== */
+.navbar{
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(15px);
+  padding:15px;
+  font-weight:600;
+  color:#7b5cd6;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+/* ===== Container ===== */
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* ===== Logo ===== */
+.logo{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+/* ===== Title ===== */
+h1{
+  color:white;
+  text-shadow:0 4px 14px rgba(0,0,0,.18);
+}
+
+/* ===== Button ===== */
+.button{
+  display:block;
+  margin:14px 0;
+  padding:16px;
+  border-radius:22px;
+  text-decoration:none;
+  color:#7b5cd6;
+  font-weight:500;
+
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+    0 5px 14px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.8);
+
+  transition:.25s;
+}
+
+.button:hover{
+  transform:translateY(-3px);
+  background:#ffffff;
+}
+
+/* ===== Footer ===== */
+.footer{
+  margin-top:45px;
+  padding:28px;
+  font-size:14px;
+  color:#7b5cd6;
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(12px);
+  border-radius:30px 30px 0 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+PAPINK STORE
+</div>
+
+<div class="container">
+
+<img class="logo" src="logo.jpg">
+
+<h1>บริการเติมเกมทั่วประเทศและอื่นๆ</h1>
+
+<a class="button" href="#">สินค้า 1</a>
+<a class="button" href="#">สินค้า 2</a>
+<a class="button" href="#">สินค้า 3</a>
+
+<a class="button" href="#">Instagram</a>
+<a class="button" href="#">Facebook</a>
+<a class="button" href="#">LINE</a>
+
+<div class="footer">
+PAPINK STORE <br>
+ร้านค้าออนไลน์ เติมไว ปลอดภัย 100%
+</div>
+
+</div>
+
+</body>
+</html>
