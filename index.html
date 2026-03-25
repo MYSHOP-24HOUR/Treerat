@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
   }
 }
 
-/* ===== Background (Soft Lilac Pastel) ===== */
+/* ===== Background ===== */
 body{
   margin:0;
   background:linear-gradient(
@@ -34,6 +34,7 @@ body{
   font-family:'Kanit',sans-serif;
   text-align:center;
   animation:fadeUp .7s ease;
+  scroll-behavior:smooth;
 }
 
 /* glow light */
@@ -58,6 +59,7 @@ h1,h2,.navbar{
 .navbar{
   position:sticky;
   top:0;
+  z-index:100;
   background:rgba(255,255,255,0.8);
   backdrop-filter:blur(15px);
   padding:15px;
@@ -114,6 +116,10 @@ h1{
   background:#ffffff;
 }
 
+.button:active{
+  transform:scale(0.96);
+}
+
 /* ===== Footer ===== */
 .footer{
   margin-top:45px;
@@ -136,7 +142,7 @@ PAPINK STORE
 
 <div class="container">
 
-<img class="logo" src="IMG_1929.jpeg">
+<img class="logo" src="IMG_1929.jpeg" alt="PAPINK STORE Logo">
 
 <h1>บริการเติมเกมทั่วประเทศและอื่นๆ</h1>
 
@@ -147,9 +153,13 @@ PAPINK STORE
 <a class="button" href="product5.html">𓈒ֺｎִｅｔֺｆִｌｉֺｘ ֺ ４Ｋ𓈒</a>
 <a class="button" href="product6.html">₍ᐢ..ᐢ₎ แอพพรีเพิ่มเติม ꩜ .</a>
 
-  
-<a class="button" href="https://www.facebook.com/share/1CNz4vUDvB/?mibextid=wwXIfr">Facebook</a>
-<a class="button" href="https://line.me/ti/p/NgMX7PZtc7">LINE</a>
+<a class="button" href="https://www.facebook.com/share/1CNz4vUDvB/?mibextid=wwXIfr" target="_blank">
+Facebook
+</a>
+
+<a class="button" href="https://line.me/ti/p/NgMX7PZtc7" target="_blank">
+LINE
+</a>
 
 <div class="footer">
 PAPINK STORE <br>
