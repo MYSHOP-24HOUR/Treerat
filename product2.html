@@ -1,94 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>𖦹₊⊹ สติ๊กเกอร์ไลน์ ꔛ♡</title>
+<title>ꔛ♡ เติมเกมต่างๆ ⊹ ࣪♡</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===== Animation ===== */
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(20px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
 /* ===== Background ===== */
 body{
   margin:0;
-  background:linear-gradient(
-    180deg,
-    #d9c9ff 0%,
-    #eee6ff 55%,
-    #faf7ff 100%
-  );
-  font-family:'Kanit', sans-serif;
+  background:linear-gradient(180deg,#d9c9ff,#eee6ff,#faf7ff);
+  font-family:'Kanit',sans-serif;
   text-align:center;
-  animation:fadeUp .7s ease;
 }
 
+/* glow light */
 body::before{
   content:"";
   position:fixed;
-  width:340px;
-  height:340px;
-  background:#efe6ff;
+  width:320px;
+  height:320px;
+  background:#ffffff;
   filter:blur(140px);
   top:-120px;
   left:-120px;
   z-index:-1;
 }
 
-/* ===== Container ===== */
+/* ===== Layout ===== */
 .container{
-  max-width:400px;
+  max-width:420px;
   margin:auto;
-  padding:30px 20px;
+  padding:28px 16px;
 }
 
 /* ===== Title ===== */
 h1{
   color:white;
-  font-family:'Mali', cursive;
+  font-family:'Mali',cursive;
   text-shadow:0 4px 14px rgba(0,0,0,.15);
 }
 
 h3{
-  font-family:'Mali', cursive;
   color:#7b5cd6;
+  font-family:'Mali',cursive;
+  margin:6px 0;
 }
 
-/* ===== Product Card ===== */
+/* ===== Product Card (FIXED) ===== */
 .product-card{
-  background:rgba(255,255,255,0.85);
-  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,0.96);
   border-radius:22px;
   padding:18px;
-  margin-bottom:22px;
+  margin-bottom:24px;
+
+  border:1px solid rgba(0,0,0,0.06);
 
   box-shadow:
-    0 8px 20px rgba(0,0,0,0.10),
-    inset 0 1px 1px rgba(255,255,255,0.8);
+    0 10px 26px rgba(0,0,0,.12),
+    inset 0 1px 1px rgba(255,255,255,.8);
+
+  transition:.25s ease;
 }
 
-/* ===== Price List (ตัวแก้หลัก) ===== */
+.product-card:hover{
+  transform:translateY(-4px);
+}
+
+/* ===== Price List ===== */
 .price-list{
-  margin-top:12px;
-  text-align:left;
+  margin-top:14px;
   display:flex;
   flex-direction:column;
-  gap:8px;
-  font-size:15px;
-  color:#555;
+  gap:9px;
+  text-align:left;
 }
 
 .price-item{
@@ -96,40 +85,38 @@ h3{
   justify-content:space-between;
   align-items:center;
 
-  background:rgba(255,255,255,0.65);
-  padding:8px 14px;
+  background:rgba(255,255,255,.75);
+  padding:10px 14px;
   border-radius:14px;
 
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  border:1px solid rgba(0,0,0,0.04);
+  font-size:15px;
 }
 
 /* ===== Button ===== */
 .button{
   display:block;
-  margin-top:25px;
+  margin-top:30px;
   padding:16px;
-  border-radius:22px;
+  border-radius:24px;
   text-decoration:none;
   color:#7b5cd6;
   font-weight:500;
 
-  background:rgba(255,255,255,0.9);
-  backdrop-filter:blur(10px);
+  background:white;
 
   box-shadow:
-    0 5px 14px rgba(0,0,0,0.12),
-    inset 0 1px 1px rgba(255,255,255,0.8);
+    0 8px 20px rgba(0,0,0,.12);
 
   transition:.25s;
 }
 
 .button:hover{
   transform:translateY(-3px);
-  background:#ffffff;
 }
 
 .button:active{
-  transform:scale(0.96);
+  transform:scale(.96);
 }
 
 </style>
@@ -139,7 +126,8 @@ h3{
 
 <div class="container">
 
-<h1>𖦹₊⊹ สติ๊กเกอร์ไลน์ ꔛ♡</h1>
+<h1>ꔛ♡ เติมเกมต่างๆ ⊹ ࣪♡</h1>
+
 
 <!-- ===== PRODUCT ===== -->
 <div class="product-card">
