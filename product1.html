@@ -10,100 +10,57 @@
 
 <style>
 
-/* ===== Animation ===== */
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(20px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-/* ===== Background ===== */
 body{
   margin:0;
-  background:linear-gradient(
-    180deg,
-    #d9c9ff 0%,
-    #eee6ff 55%,
-    #faf7ff 100%
-  );
-  font-family:'Kanit', sans-serif;
+  background:linear-gradient(180deg,#d9c9ff,#eee6ff,#faf7ff);
+  font-family:'Kanit',sans-serif;
   text-align:center;
-  animation:fadeUp .7s ease;
 }
 
-body::before{
-  content:"";
-  position:fixed;
-  width:340px;
-  height:340px;
-  background:#efe6ff;
-  filter:blur(140px);
-  top:-120px;
-  left:-120px;
-  z-index:-1;
-}
-
-/* ===== Container ===== */
 .container{
-  max-width:400px;
+  max-width:420px;
   margin:auto;
-  padding:30px 20px;
+  padding:25px 15px;
 }
 
-/* ===== Title ===== */
 h1{
   color:white;
-  font-family:'Mali', cursive;
+  font-family:'Mali',cursive;
   text-shadow:0 4px 14px rgba(0,0,0,.15);
 }
 
 h3{
-  font-family:'Mali', cursive;
   color:#7b5cd6;
+  font-family:'Mali',cursive;
 }
 
-/* ===== Product Card ===== */
+/* การ์ด */
 .product-card{
   background:rgba(255,255,255,0.85);
-  backdrop-filter:blur(12px);
   border-radius:22px;
   padding:18px;
   margin-bottom:22px;
-
-  box-shadow:
-    0 8px 20px rgba(0,0,0,0.10),
-    inset 0 1px 1px rgba(255,255,255,0.8);
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
 }
 
-/* ===== Price List (ตัวแก้หลัก) ===== */
+/* รายการราคา */
 .price-list{
   margin-top:12px;
-  text-align:left;
   display:flex;
   flex-direction:column;
   gap:8px;
-  font-size:15px;
-  color:#555;
+  text-align:left;
 }
 
 .price-item{
   display:flex;
   justify-content:space-between;
-  align-items:center;
-
-  background:rgba(255,255,255,0.65);
+  background:rgba(255,255,255,.7);
   padding:8px 14px;
   border-radius:14px;
-
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* ===== Button ===== */
+/* ปุ่ม */
 .button{
   display:block;
   margin-top:25px;
@@ -111,25 +68,7 @@ h3{
   border-radius:22px;
   text-decoration:none;
   color:#7b5cd6;
-  font-weight:500;
-
-  background:rgba(255,255,255,0.9);
-  backdrop-filter:blur(10px);
-
-  box-shadow:
-    0 5px 14px rgba(0,0,0,0.12),
-    inset 0 1px 1px rgba(255,255,255,0.8);
-
-  transition:.25s;
-}
-
-.button:hover{
-  transform:translateY(-3px);
-  background:#ffffff;
-}
-
-.button:active{
-  transform:scale(0.96);
+  background:white;
 }
 
 </style>
@@ -141,37 +80,130 @@ h3{
 
 <h1>ꔛ♡ เติมเกมต่างๆ ⊹ ࣪♡</h1>
 
-<!-- ===== PRODUCT ===== -->
+<!-- ================= Free Fire เสริม ================= -->
 <div class="product-card">
-
-<h3>⊹ ࣪-Free Fire ⊹ เซิร์ฟไทย</h3>
-
+<h3>𓍯ೀแพ็คเกจ เสริม Free Fire</h3>
 <div class="price-list">
-
-<div class="price-item"><span>33 💎</span><span>12฿</span></div>
-<div class="price-item"><span>68 💎</span><span>22฿</span></div>
-<div class="price-item"><span>101 💎</span><span>33฿</span></div>
-<div class="price-item"><span>136 💎</span><span>43฿</span></div>
-<div class="price-item"><span>172 💎</span><span>51฿</span></div>
-<div class="price-item"><span>205 💎</span><span>63฿</span></div>
-<div class="price-item"><span>240 💎</span><span>70฿</span></div>
-<div class="price-item"><span>310 💎</span><span>90฿</span></div>
-<div class="price-item"><span>344 💎</span><span>100฿</span></div>
-<div class="price-item"><span>517 💎</span><span>148฿</span></div>
-<div class="price-item"><span>690 💎</span><span>198฿</span></div>
-<div class="price-item"><span>1052 💎</span><span>290฿</span></div>
-<div class="price-item"><span>1257 💎</span><span>341฿</span></div>
-<div class="price-item"><span>1801 💎</span><span>480฿</span></div>
-<div class="price-item"><span>3698 💎</span><span>960฿</span></div>
-
+<div class="price-item"><span>บูย่าพาส</span><span>90฿</span></div>
+<div class="price-item"><span>รายสัปดาห์มินิ</span><span>35฿</span></div>
+<div class="price-item"><span>รายสัปดาห์</span><span>68฿</span></div>
+<div class="price-item"><span>รายเดือน</span><span>290฿</span></div>
+</div>
 </div>
 
+<!-- ================= แพ็คเติบโต ================= -->
+<div class="product-card">
+<h3>𓍯ೀ แพ็คเติบโต</h3>
+<div class="price-list">
+<div class="price-item"><span>เติบโต-เวล6</span><span>9฿</span></div>
+<div class="price-item"><span>เติบโต-เวล10-25 (แพ็คละ)</span><span>18฿</span></div>
+<div class="price-item"><span>เติบโต-เวล30</span><span>26฿</span></div>
+<div class="price-item"><span>เติบโตเหมาทุกแพ็ค</span><span>106฿</span></div>
+</div>
 </div>
 
-<!-- ปุ่มกลับ -->
+<!-- ================= ส่งของขวัญ ================= -->
+<div class="product-card">
+<h3>🎁 ส่งของขวัญ Free Fire</h3>
+<div class="price-list">
+<div class="price-item"><span>บัตรเปลี่ยนชื่อ</span><span>45฿</span></div>
+<div class="price-item"><span>99💎</span><span>15฿</span></div>
+<div class="price-item"><span>149💎</span><span>25฿</span></div>
+<div class="price-item"><span>199💎</span><span>30฿</span></div>
+<div class="price-item"><span>249💎</span><span>35฿</span></div>
+<div class="price-item"><span>299💎</span><span>40฿</span></div>
+<div class="price-item"><span>499💎</span><span>60฿</span></div>
+<div class="price-item"><span>699💎</span><span>80฿</span></div>
+</div>
+</div>
+
+<!-- ================= FF อินโด ================= -->
+<div class="product-card">
+<h3>Free Fire เซิร์ฟอินโด</h3>
+<div class="price-list">
+<div class="price-item"><span>5💎</span><span>5฿</span></div>
+<div class="price-item"><span>12💎</span><span>10฿</span></div>
+<div class="price-item"><span>50💎</span><span>20฿</span></div>
+<div class="price-item"><span>70💎</span><span>30฿</span></div>
+<div class="price-item"><span>140💎</span><span>50฿</span></div>
+<div class="price-item"><span>355💎</span><span>110฿</span></div>
+<div class="price-item"><span>720💎</span><span>225฿</span></div>
+<div class="price-item"><span>1450💎</span><span>415฿</span></div>
+<div class="price-item"><span>2180💎</span><span>615฿</span></div>
+<div class="price-item"><span>3640💎</span><span>990฿</span></div>
+<div class="price-item"><span>7290💎</span><span>1980฿</span></div>
+<div class="price-item"><span>BP Card</span><span>89฿</span></div>
+<div class="price-item"><span>สมาชิกรายสัปดาห์</span><span>69฿</span></div>
+<div class="price-item"><span>สมาชิกรายเดือน</span><span>169฿</span></div>
+</div>
+</div>
+
+<!-- ================= ROV ================= -->
+<div class="product-card">
+<h3>เรทเติมคูปอง ROV</h3>
+<div class="price-list">
+<div class="price-item"><span>11 ปอง</span><span>12฿</span></div>
+<div class="price-item"><span>24 ปอง</span><span>23฿</span></div>
+<div class="price-item"><span>60 ปอง</span><span>55฿</span></div>
+<div class="price-item"><span>110 ปอง</span><span>93฿</span></div>
+<div class="price-item"><span>185 ปอง</span><span>150฿</span></div>
+<div class="price-item"><span>295 ปอง</span><span>249฿</span></div>
+<div class="price-item"><span>480 ปอง</span><span>400฿</span></div>
+<div class="price-item"><span>1240 ปอง</span><span>990฿</span></div>
+</div>
+</div>
+
+<!-- ================= Roblox ================= -->
+<div class="product-card">
+<h3>เติม Roblox</h3>
+<div class="price-list">
+<div class="price-item"><span>40R$</span><span>23฿</span></div>
+<div class="price-item"><span>80R$</span><span>37฿</span></div>
+<div class="price-item"><span>120R$</span><span>55฿</span></div>
+<div class="price-item"><span>160R$</span><span>69฿</span></div>
+<div class="price-item"><span>240R$</span><span>100฿</span></div>
+<div class="price-item"><span>400R$</span><span>159฿</span></div>
+<div class="price-item"><span>800R$</span><span>340฿</span></div>
+<div class="price-item"><span>1700R$</span><span>599฿</span></div>
+</div>
+</div>
+
+<!-- ================= Heartopia ================= -->
+<div class="product-card">
+<h3>HEARTOPIA Diamond</h3>
+<div class="price-list">
+<div class="price-item"><span>20 หัวใจ</span><span>15฿</span></div>
+<div class="price-item"><span>60 หัวใจ</span><span>33฿</span></div>
+<div class="price-item"><span>320 หัวใจ</span><span>155฿</span></div>
+<div class="price-item"><span>730 หัวใจ</span><span>335฿</span></div>
+<div class="price-item"><span>1370 หัวใจ</span><span>585฿</span></div>
+<div class="price-item"><span>2130 หัวใจ</span><span>895฿</span></div>
+</div>
+</div>
+
+<!-- ================= Minecraft ================= -->
+<div class="product-card">
+<h3>Minecraft</h3>
+<div class="price-list">
+<div class="price-item"><span>320 เหรียญ</span><span>59฿</span></div>
+<div class="price-item"><span>1020 เหรียญ</span><span>150฿</span></div>
+<div class="price-item"><span>1720 เหรียญ</span><span>260฿</span></div>
+<div class="price-item"><span>3500 เหรียญ</span><span>520฿</span></div>
+<div class="price-item"><span>8800 เหรียญ</span><span>1200฿</span></div>
+</div>
+</div>
+
+<!-- ================= App Minecraft ================= -->
+<div class="product-card">
+<h3>แอพ Minecraft</h3>
+<div class="price-list">
+<div class="price-item"><span>iOS</span><span>10฿</span></div>
+<div class="price-item"><span>Android</span><span>15฿</span></div>
+</div>
+</div>
+
 <a class="button" href="index.html">⬅ กลับหน้าหลัก</a>
 
 </div>
-
 </body>
 </html>
